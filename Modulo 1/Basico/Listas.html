@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<!--Listas ordenadas e desordenadas podem ser feitas sem o </li> no final Tem os dois exemplos ai de como ser feita--> 
+<body>
+    <h1>Listas</h1>
+    <hr>
+    <h2>Listas Ordenadas (Ordered List / Tag ol)</h2>
+    <ol type="1">
+        <li>Acordar</li>
+        <li>Tomar um banho</li>
+        <li>Escovar os dentes</li>
+        <li>Cafe da manha</li>
+    </ol>
+    <p>Para adicionar um item numa lista usasse a Tag li (List item)</p>
+    <p>Pode-se alterar o tipo da ordenação com : <br><br>( type A ou a / Para ordem feita com letras ) <br>( type I e i / Para numeros romanos ) <br>(type 1 / Para ordem numerica ) <br><br><strong>OBS</strong>: Pode-se tambem mudar o incio com a tag start e o numero ou letra que se quer começar</p>
+    <hr>
+    <h2>Listas não Ordenadas (Unordered List / tag ul)</h2>
+    <ul type="disc">
+        <li>Pão
+        <li>Tomate
+        <li>Cebola
+        <li>Leite
+        <li>Manteiga
+    </ul>
+    <p>Pode-se alterar o símbolo dos elementos com : <br><br> (type square / Para um quadrado) <br> (type circle / Para um circulo furado) <br> (type disc / Para um circulo cheio)</p>
+    <hr>
+    <h2>Listas com Listas</h2>
+    <h3>Linguagens</h3>
+    <ol>
+        <li>Linguagens Antigas</li>
+        <ol type="A">
+            <li>Clipper</li>
+            <li>Fortran</li>
+            <li>Assemble</li>
+        </ol>
+        <li>Linguagens Novas</li>
+        <ol type="A" start="4">
+            <li>Python</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h3>Jogos</h3>
+    <ol>
+        <li>Sony</li>
+        <ul type="disc">
+            <li>Call of Duty</li>
+            <li>God of War</li>
+            <li>Horizon Zero Down</li>
+        </ul>
+        <li>Microsoft</li>
+        <ul type="disc">
+            <li>Halo</li>
+            <li>Forza Horizon</li>
+        </ul>
+        <li>Nintendo</li>
+        <ul type="disc">
+            <li>Mario</li>
+            <li>Pokemon</li>
+            <ul type="circle">
+                <li>Gold</li>
+                <li>Pearl</li>
+                <li>Diamond</li>
+            </ul>
+            <li>Zelda</li>
+        </ul>
+    </ol>
+    <hr>
+    <h2>Lista de Definição (Definicion List / tag dl)</h2>
+    <dl>
+        <dt>HTML <strong>(tag dt)</strong></dt>
+        <dd>Linguagem de marcação para a criação de conteúdo de um site <strong>(tag dd)</strong></dd>
+        <dt>CSS <strong>(tag dt)</strong></dt>
+        <dd>Linguagem de marcação para a criação do design de um site <strong>(tag dd)</strong></dd>
+        <dt>JavaScript <strong>(tag dt)</strong></dt>
+        <dd>linguagem de programação para interatividade de um site <strong>(tag dd)</strong></dd>
+    </dl>
+</body>
+</html>

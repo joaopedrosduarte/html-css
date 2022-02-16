@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo de caixas</title>
+    <style>
+        body {
+            background-color: #2a2a57;
+            color: antiquewhite;
+            font-family: sans-serif;
+            font-size: 1.2em;
+        }
+        h1 {
+            background-color: #373774;
+            width: 300px;
+            height: 200px;
+            /*Tags border ... mexem nas configs da borda */
+            border-width:10px;
+            border-style: solid;
+            border-color: #3e3eb6;
+            /*Tags padding ... mexem nas configs do espaco entre o conteudo e a borda*/
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*Tags Margin ... mexem nas configs da margem */
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            /*Tags outline ... mexem nas configs da linha entre a margem e o border*/
+            outline-width: 10px;
+            outline-style: dashed;
+            outline-color: #7fffd4;
+
+            /* No quesito de centralizar objetos no centro da tela 
+            Texto = text aligt
+            box = margin: auto; ou margin: 10px auto 10px auto;*/
+        }
+
+        h2 {
+            /*SHORT HAND BORDER : Espessura Estilo e Cor*/
+            border: 10px solid #3e3eb6;
+            /*Os SHORT HAND PADDING == MARGIN*/
+
+            /*SHORT HAND 1 : ENCIMA = 10PX DIREITA = 10PX EMBAIXO = 10PX ESQUERDA = 10PX*/
+            padding: 10px 10px 10px 10px;
+            /*SHORT HAND 2 : ENCIMA = 10PX DIREITA = 20PX EMBAIXO = 10PX E ENCIMA = 20PX*/
+            margin: 10px 20px;
+            /*SHORT HAND 3 : ENCIMA = 10PX DIREITA = 10PX EMBAIXO = 10PX E ENCIMA = 10PX*/
+            /*padding: 10px;*/
+
+            /*SHORT HAND OUTLINE : Espessura Estilo e Cor*/
+            outline: 10px dashed coral;
+        }
+
+        a {
+            color: aliceblue;
+
+            border-width: 1px; 
+            border-style: solid; /*Tem muitos estilos para bordas EX: dashed dotted solid double groove*/
+            border-color: #3e3eb6;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>caixas Inline e Box level</h1>
+    <p>Paragrafos são caixas tipo box level porem <a href="#">links não são box level</a> vamos ver como isso tudo funciona</p>
+    <h2>Short hands no codigo</h2>
+</body>
+</html>

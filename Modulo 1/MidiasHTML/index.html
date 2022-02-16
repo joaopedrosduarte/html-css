@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia HTML5</title>
+</head>
+<body>
+    <h1>Midias em HTML5</h1>
+    <h2>Imagens adaptaveis (Tag picture)</h2>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 700px)" srcset="image/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="image/foto-m.png" type="image/png">
+        <img src="image/foto-g.png" alt="Foto grande Flexivel">
+    </picture>
+    <hr>
+    <h2>Reproduzindo Audios (Tag audio)</h2>
+    <p>A tag audio normal apenas é compativel com MP3 WAV OGG <br>Exemplo a baixo</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay loop ></audio>
+    <!--Controls autoplay loop estudar esses role pq eu n sei especificamente -->
+    <p>O exemplo abaixo já utiliza mais formatos de audio</p>
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <p>Não foi possivel carregar o audio <a href="midia/guanacast-33.mp3">Clique aqui</a>para baixar o audio</p>
+    </audio>
+    <hr>
+    <h2>Reproduzindo video localmente (Tag video)</h2>
+    <p>Este video esta sendo hospedado localmente</p>
+    <p>Forma simples / Forma avançada :</p>
+    <video src="midia/Video.mp4" poster="image/limoes-capa.png" width="200" controls></video>
+    <video width="200" controls>
+        <source src="midia/Video.m4v" type="video/mp4">
+        <source src="midia/Video.m4v" type="video/mp4">
+        <source src="midia/Video.webm" type="video/webm">
+        <p>Seu Navegador não tem compatibilidade com o video <br> <a href="midia/Video.mp4">Clique aqui</a>para baixar o video</p>
+    </video>
+    <h2>Reproduzindo videos no youtube </h2>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/aMdmgNYWRqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

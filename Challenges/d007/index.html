@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexivel</title>
+</head>
+<body>
+    <h1>Imagem Flexivel</h1>
+    <p>Vamos por o meu conhecimento a prova. Saca so essa imagem ela aumenta e diminui o tamanha dependendo do tamanho do browser!!! Testa ai.</p>
+    <picture>
+        <source media="(max-width: 748px)" srcset="image/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1208px)" srcset="image/paisagem-m.png" type="image/png">
+        <img src="image/paisagem-g.png" alt="Imagem grande">
+    </picture>
+</body>
+</html>

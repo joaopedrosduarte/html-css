@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FontesExternas</title>
+    <style>
+
+        /* Fontes externas na internet (Google Fonts)*/
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        /* Fontes externas baixadas */
+        @font-face {
+            font-family: Love; /*Nome da fonte*/
+            src: url(Fonts/True\ Love\ Hearts\ Demo.otf) /*Format*/;
+            /* 
+            Tipos de format()
+            -    opentype (otf)
+            -    truetype (ttf)
+            -    embedded-opentype
+            -    truetype-att (Apple Advanced Typography)
+            -    svg
+            */
+            font-weight: lighter;
+            font-style: normal
+        }
+
+        body{
+            background-color: rgb(18, 18, 46);
+            color: aliceblue;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: lighter;
+            font-size: 1.2em;
+        }
+
+        h1{
+            font: normal lighter 2em Love;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Titulo de teste ( Love )</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente velit saepe ea illum itaque possimus sed cumque. Quis, cumque, voluptate obcaecati ipsam ullam dolorem, a hic ut labore doloribus laudantium. ( Work Sans )</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*
+    ID = h1#principal (so pode 1 elemento por pagina)
+    CLASS = .principal (varios elementos por pagina)
+
+    OBS: Podese botar mais de uma classe e um id em um elemento 
+    id sobrepoz o class 
+*/
+
+body {
+    background-color: #1f1f44;
+    color: #faebd7;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+#principal{
+    text-align: center;
+    background-color: aqua;
+    color: black;
+}
+
+.secundario{
+    font: normal bold 1.6em sans-serif;
+}
+
+.basico{
+    color: #7ddb1e;
+}
+
+.medio{
+    color: #dbd81e;
+}
+
+.dificil{
+    color: #db1e1e;;
+}
+

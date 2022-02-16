@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Links</title>
+    <style>
+        body {
+            background-color: #1f1f44;
+            color: antiquewhite;
+        }
+
+        a {
+            color: darkgoldenrod;
+            text-decoration: none;
+        }
+        
+        /*
+            Pseudo classes   = :
+            Pseudo elementos = ::
+            Children         = >
+            Id               = #
+            Class            = .
+        */
+
+        a:visited {
+            /*Visited = sites que ja foram visitados e mudam a cor do link*/
+            color: #e0b139;
+        }
+
+        a:hover {
+            /*Hover = Mudar quando o mouse estiver ensima*/
+            text-decoration: underline;
+            color: antiquewhite;
+        }
+
+        a:active {
+            /*Active = Muda a cor do link quando clicado*/
+            color: #fcf04a;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/Tapedm" target="_blank">Meu GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCy_lQXou5wMFgADzCXz08eg" target="_blank">Meu Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do CursoEmVideo</a></li>
+    </ul>
+</body>
+</html>

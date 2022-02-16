@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Ancoras</title>
+</head>
+<!-- 
+    target="_blank" Abrir outra aba
+    target="_self"  Substituir aba atual
+    rel="external"  vou pra outro site
+    rel="next"      vou pra proxima pagina do meu site
+    rel="prev"      vou pre anterior do meu site
+    rel="nofollow"  não recomenda seguir o link para o algoritimo de pesquisa
+-->
+<body>
+    <h1>Links (tag a)</h1>
+    <hr>
+    <h2>Links Externos</h2>
+    <p>Você pode ver esse  <a href="https://www.youtube.com/watch?v=G6NGh0oK0u4"> video do youtube</a></p>
+    <p>E você tambem pode ver esse outro <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27" target="_blank" rel="external">video no youtube</a></p>
+    <p>O primeiro video só possui a URL do youtube sem mais nenhuma alteração, ou seja <br> Vai apenas trocar para a aba do youtube e fechar a do nosso site, <Strong>usando o padrão de target="_self"</Strong></p>
+    <p>Agora, O segundo video Tem uma configuração adicional <Strong>(Target="_blank" e rel="external")</Strong> <br>O primeiro responsavel por abrir o video em outra aba, não fechando o nosso site, </p>
+    <h3>Exemplos :</h3>
+    <p><a href="Proxima_pagina" target="_self" rel="next">Continuar navegando no site</a> Usando <Strong>target="_self"</Strong> para abrir na mesma aba e <Strong>rel="next"</Strong><br> para indicar que é a proxima pagina do mesmo site</p>
+    <p><a href="Link_externo" target="_blank" rel="external">Abrir em uma nova pagina em outra aba</a> com o <strong>target="_blank"</strong> e indicando que é uma pagina <br> fora do nosso site com o <strong>rel="external"</strong></p>
+    <p><a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27" target="_top" rel="prev"> Fechar todas as abas</a> Não entendi o target="_top" </p>
+    <hr>
+    <h2>Links Internos</h2>
+    <p>Esta é a primeira pagina</p> 
+    <p><a href="Pag002.html" target="_self" rel="next">Link para a segunda pagina</a></p>
+    <p><a href="./Noticías/pag003.html" target="_self" rel="next">Link para a terceira pagina</a></p>
+    <hr>
+    <h2>Links para Dowload</h2>
+    <ul type="disc">
+        <li><a href="./Livro/meulivro.pdf">Livro Test OBS: só vai abrir o arquivo</a></li>
+        <li><a href="./Livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro Test compactado</a></li>
+        <li><a href="#">Em Breve</a></li>
+    </ul>
+
+</body>
+</html>

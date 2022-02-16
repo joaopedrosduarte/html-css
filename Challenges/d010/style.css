@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/*#3CD782*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf);
+}
+
+body {
+    background-color: #C2EBD3;
+    font: normal normal 1em 'Work Sans', sans-serif;
+    color: white;
+    margin: 0px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #3CD782,#154B2D);
+    text-align: center;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.295);
+    padding: 10px 0px 11px 6px;
+    margin: 0px;
+}
+
+header > h1 {
+    font: bold normal 2em 'Work Sans', sans-serif;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.164);
+}
+
+header > p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+nav {
+    text-align: left;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+}
+
+nav > a:hover {
+    background-color: #279A60;
+    color: #154B2D;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+main {
+    background-color: white;
+    color: black;
+    min-width: 280;
+    max-width: 1000px;
+    height: auto;
+    padding: 0px 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.151);
+    margin: auto;
+}
+
+article > h1 {
+    font-family: android;
+    color: #185A36;
+    margin: 0px;
+    padding: 30px 0px 0px 0px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 35px;
+    padding: 0px;
+}
+
+article > h2 {
+    font-family: android;
+    background-image: linear-gradient(to right,#c6ead6,#FEFFFE);
+    color: #185A36;
+    margin-left: 0px;
+    padding: 0px 10px;
+}
+
+img {
+    padding: auto;
+    width: 100%;
+}
+
+.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    margin: 30px -20px ;
+    padding: 20px;
+    background-color: #185A36;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+/*
+
+PARA CENTRALIZAR VIDEOS NO YOUTUBE PRECISA FAZER ESSA GAMBIARRA
+
+div.video {
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+*/
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: #97e9bc;
+    margin: 0px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.295);
+    border-radius: 10px;
+}
+
+aside > h3 {
+    background-color: #185A36;
+    color: white;
+    font: bold normal 1.3em 'Work Sans', sans-serif;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    margin: -15px -15px 5px -15px;
+}
+
+aside > p {
+    text-indent: 18px;
+}
+
+aside > ul {
+    /*Esse codigo e o emoji do check e os dois depois sao um espacamento*/
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+p#ultimo {
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #154B2D;
+    font: lighter normal 3em;
+    margin: 30px 0px 0px 0px;
+    padding: 1px;
+}
+
+footer > p {
+    text-align: center;
+    margin: 5px;
+    padding: 0px;
+}
