@@ -7,15 +7,25 @@
     src: url(fontes/idroid.otf);
 }
 
+:root {
+    --c0: #E7E5C1;
+    --c1: #C2EBD3;
+    --c2: #3CD782;
+    --c3: #279A60;
+    --c4: #154B2D;
+    --c5: #185A36;
+    --c6: #97e9bc;
+}
+
 body {
-    background-color: #C2EBD3;
+    background-color: var(--c0);
     font: normal normal 1em 'Work Sans', sans-serif;
     color: white;
     margin: 0px;
 }
 
 header {
-    background-image: linear-gradient(to bottom, #3CD782,#154B2D);
+    background-image: linear-gradient(to bottom, var(--c2),var(--c4));
     text-align: center;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.295);
     padding: 10px 0px 11px 6px;
@@ -45,8 +55,8 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: #279A60;
-    color: #154B2D;
+    background-color: var(--c3);
+    color: var(--c4);
     border-radius: 10px;
     transition-duration: 0.4s;
 }
@@ -65,7 +75,7 @@ main {
 
 article > h1 {
     font-family: android;
-    color: #185A36;
+    color: var(--c4);
     margin: 0px;
     padding: 30px 0px 0px 0px;
 }
@@ -78,8 +88,8 @@ p {
 
 article > h2 {
     font-family: android;
-    background-image: linear-gradient(to right,#c6ead6,#FEFFFE);
-    color: #185A36;
+    background-image: linear-gradient(to right,var(--c6),white);
+    color: var(--c5);
     margin-left: 0px;
     padding: 0px 10px;
 }
@@ -98,7 +108,7 @@ img {
 div.video {
     margin: 30px -20px ;
     padding: 20px;
-    background-color: #185A36;
+    background-color: var(--c5);
     padding-bottom: 50%;
     position: relative;
 }
@@ -130,7 +140,7 @@ div.video > iframe {
 }
 
 aside {
-    background-color: #97e9bc;
+    background-color: var(--c6);
     margin: 0px;
     padding: 15px;
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.295);
@@ -138,7 +148,7 @@ aside {
 }
 
 aside > h3 {
-    background-color: #185A36;
+    background-color: var(--c5);
     color: white;
     font: bold normal 1.3em 'Work Sans', sans-serif;
     border-radius: 10px 10px 0px 0px;
@@ -162,7 +172,7 @@ p#ultimo {
 }
 
 footer {
-    background-color: #154B2D;
+    background-color: var(--c4);
     font: lighter normal 3em;
     margin: 30px 0px 0px 0px;
     padding: 1px;
